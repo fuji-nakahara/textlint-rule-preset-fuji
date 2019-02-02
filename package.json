@@ -4,7 +4,7 @@
   "description": "Fuji Nakahara's textlint rule preset for Japanese novels",
   "main": "lib/textlint-rule-preset-fuji.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/ && (cd example && npm install-test)"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,9 @@
     "url": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji/issues"
   },
   "homepage": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
   "dependencies": {
     "@textlint-rule/textlint-rule-no-invalid-control-character": "^1.2.0",
     "textlint-rule-ja-hiragana-fukushi": "^1.0.3",
