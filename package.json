@@ -1,6 +1,6 @@
 {
   "name": "textlint-rule-preset-fuji",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Fuji Nakahara's textlint rule preset for Japanese novels",
   "main": "lib/textlint-rule-preset-fuji.js",
   "scripts": {
