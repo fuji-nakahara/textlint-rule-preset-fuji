@@ -1,0 +1,23 @@
+{
+  "name": "textlint-rule-preset-fuji",
+  "version": "0.0.1",
+  "description": "Fuji Nakahara's textlint rule preset for Japanese novels",
+  "main": "lib/textlint-rule-preset-fuji.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fuji-nakahara/textlint-rule-preset-fuji.git"
+  },
+  "keywords": [
+    "textlint",
+    "preset"
+  ],
+  "author": "Fuji Nakahara",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji/issues"
+  },
+  "homepage": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji#readme"
+}
