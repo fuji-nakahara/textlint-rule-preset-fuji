@@ -4,6 +4,9 @@ const { moduleInterop } = require("@textlint/module-interop");
 
 module.exports = {
     rules: {
+        "no-insert-dropping-sa": moduleInterop(require("@textlint-ja/textlint-rule-no-insert-dropping-sa")),
+        "no-invalid-control-character": moduleInterop(require("@textlint-rule/textlint-rule-no-invalid-control-character")),
+        "no-unmatched-pair": moduleInterop(require("@textlint-rule/textlint-rule-no-unmatched-pair")),
         "ja-hiragana-fukushi": moduleInterop(require("textlint-rule-ja-hiragana-fukushi")),
         "ja-hiragana-hojodoushi": moduleInterop(require("textlint-rule-ja-hiragana-hojodoushi")),
         "ja-hiragana-keishikimeishi": moduleInterop(require("textlint-rule-ja-hiragana-keishikimeishi")),
@@ -15,9 +18,18 @@ module.exports = {
         "ja-space-between-half-and-full-width": moduleInterop(require("textlint-rule-ja-space-between-half-and-full-width")),
         "no-doubled-conjunctive-particle-ga": moduleInterop(require("textlint-rule-no-doubled-conjunctive-particle-ga")),
         "no-dropping-the-ra": moduleInterop(require("textlint-rule-no-dropping-the-ra")),
-        "no-invalid-control-character": moduleInterop(require("@textlint-rule/textlint-rule-no-invalid-control-character"))
+        "no-start-duplicated-conjunction": moduleInterop(require("textlint-rule-no-start-duplicated-conjunction")),
     },
     rulesConfig: {
+        // サ抜き、サ入れ表現の誤用をチェックする
+        // https://github.com/textlint-ja/textlint-rule-no-insert-dropping-sa
+        "no-insert-dropping-sa": true,
+        // 不必要な制御文字を使用しない
+        // https://github.com/textlint-rule/textlint-rule-no-invalid-control-character
+        "no-invalid-control-character": true,
+        // 対になっていない括弧をチェックする
+        // https://github.com/textlint-rule/textlint-rule-no-unmatched-pair
+        "no-unmatched-pair": true,
         // # ひらがなで表記したほうが読みやすい副詞を漢字で使用しない
         // https://github.com/lostandfound/textlint-rule-ja-hiragana-fukushi
         "ja-hiragana-fukushi": true,
@@ -51,8 +63,11 @@ module.exports = {
         // # ら抜き言葉を使用しない
         // https://github.com/textlint-ja/textlint-rule-no-dropping-the-ra
         "no-dropping-the-ra": true,
-        // # 不必要な制御文字を使用しない
-        // https://github.com/textlint-rule/textlint-rule-no-invalid-control-character
-        "no-invalid-control-character": true
+        // UTF8-MAC 濁点を使用しない
+        // https://github.com/azu/textlint-rule-no-nfd
+        "no-nfd": true,
+        // 同じ接続詞ではじまる文が連続していないかチェックする
+        // https://github.com/textlint-rule/textlint-rule-no-start-duplicated-conjunction
+        "no-start-duplicated-conjunction": true
     }
 };
