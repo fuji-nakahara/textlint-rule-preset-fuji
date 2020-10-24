@@ -1,6 +1,6 @@
 {
   "name": "textlint-rule-preset-fuji",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Fuji Nakahara's textlint rule preset for Japanese novels",
   "main": "index.js",
   "repository": {
@@ -16,7 +16,9 @@
     "url": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji/issues"
   },
   "homepage": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji#readme",
-  "files": ["index.js"],
+  "files": [
+    "index.js"
+  ],
   "dependencies": {
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^1.0.1",
     "@textlint-rule/textlint-rule-no-invalid-control-character": "^1.2.0",
