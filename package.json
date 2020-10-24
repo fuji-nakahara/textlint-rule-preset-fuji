@@ -16,6 +16,7 @@
     "url": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji/issues"
   },
   "homepage": "https://github.com/fuji-nakahara/textlint-rule-preset-fuji#readme",
+  "files": ["index.js"],
   "dependencies": {
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^1.0.1",
     "@textlint-rule/textlint-rule-no-invalid-control-character": "^1.2.0",
