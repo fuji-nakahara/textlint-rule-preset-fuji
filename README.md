@@ -22,4 +22,4 @@ Via CLI:
 
     textlint --preset textlint-rule-preset-fuji README.md
 
-See [lib/textlint-rule-preset-fuji.js](./lib/textlint-rule-preset-fuji.js) for details of the rules.
+See [index.js](index.js) for details of the rules.
