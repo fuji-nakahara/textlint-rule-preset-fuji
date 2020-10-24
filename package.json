@@ -8,8 +8,7 @@
     "url": "git+https://github.com/fuji-nakahara/textlint-rule-preset-fuji.git"
   },
   "keywords": [
-    "textlint",
-    "preset"
+    "textlintrule"
   ],
   "author": "Fuji Nakahara",
   "license": "MIT",
